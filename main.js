@@ -8,12 +8,32 @@ function main() {
     
 }
 function startSlideshowAnimation() {
-    //setInterval(changeActiveImage, 2000);
+    setInterval(changeActiveImage, 2000);
     changeActiveImage();
 }
 
 
 function changeActiveImage() {
     const images = document.querySelectorAll('.slidershow-container > img');
-    console.log(images)
+   
+
+    for(let i = 0; i < images.length; i++) {
+        
+        if (images[i].classList.contains('show')) {
+        //1. ta bort show-klassen från aktuellt index
+        images[i].classList.remove('show');
+
+        //2. lägg till show-klassen på nästa index
+        let nextIndex = i + 1;
+
+        if (nextIndex >= images.length) {
+            nextIndex = 0;
+        }
+
+        images[nextIndex].classList.add('show');
+
+        //3. hoppa ur loopen när vi bytt bild
+        break;
+        }
+    }
 }
