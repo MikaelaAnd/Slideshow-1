@@ -20,7 +20,7 @@ body {
     opacity: 0;
     transition: opacity 1s;
     object-fit: cover;
-    object-position: center;
+    
 }
 
 .slideshow-container .show {
