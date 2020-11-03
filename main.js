@@ -14,7 +14,7 @@ function startSlideshowAnimation() {
 
 
 function changeActiveImage() {
-    const images = document.querySelectorAll('.slidershow-container > img');
+    const images = document.querySelectorAll('.slideshow-container > img');
    
 
     for(let i = 0; i < images.length; i++) {
