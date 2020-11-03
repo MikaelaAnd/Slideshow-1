@@ -17,10 +17,12 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    /*opacity: 0;*/
+    opacity: 0;
     transition: opacity 1s;
+    object-fit: cover;
+    object-position: center;
 }
 
-.show {
+.slideshow-container .show {
     opacity: 1;
 }
