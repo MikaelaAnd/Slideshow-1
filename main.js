@@ -25,10 +25,23 @@ function changeActiveImage() {
         images[i].classList.remove('show');
 
             //2. Make sure we go back to index 0 when at the end of array.
-            let nextIndex = i + 1;
-            if (nextIndex >= images.length) {
-                nextIndex = 0;
-            }
+            let nextIndex = (i + 1) % images.length;
+        
+        //Alternative use an if statement to reset the value to 0
+        // if (nextIndex >= images.length) {
+        //     nextIndex = 0;
+        //}
+
+        //  Modulus, hur många gånger går det att dela, och vad blir över
+        // 0 / 4 = 0
+        // 1 / 4 = 1
+        // 2 / 4 = 2
+        // 3 / 4 = 3
+        // 4 / 4 = 0
+        // 5 / 4 = 1
+        // 6 / 4 = 2
+        // 7 / 4 = 3
+        
 
             images[nextIndex].classList.add('show');
             //3. hoppa ur loopen när vi bytt bild
