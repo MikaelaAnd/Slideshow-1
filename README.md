@@ -1,5 +1,5 @@
-My first slideshow!
+# My first slideshow!
 
 All pictures are taken and edited by me and my crappy iphone 7s camera ⚡️ 
 
-👉  https://mikaelaand.github.io/Slideshow-1/
+👉 [Look here] (https://mikaelaand.github.io/Slideshow-1/)
